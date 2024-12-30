@@ -18,7 +18,7 @@ function Skills() {
             <div className="text-center">
                 <h2 className="text-2xl font-semibold text-gray-800 dark:text-white mb-6">My Skills</h2>
                 <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-                    <ul ref={logosRef} className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+                    <ul ref={logosRef} className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-marquee-infinite">
                         <li>
                             <img src="React.png" alt="React" className="w-16 grayscale" />
                         </li>

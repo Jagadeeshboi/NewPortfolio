@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export const PrimarySemiRoundedButton = () => {
   return (
     <button className='bg-primary border-primary border rounded-md inline-flex items-center justify-center py-3 px-7 text-center text-base font-medium text-white hover:bg-orange-500 hover:border-orange-500 disabled:bg-gray-3 disabled:border-gray-3 disabled:text-dark-5 active:bg-orange-500 active:border-orange-500'>
-      Hire Me
+      <Link to="/contact">Hire Me</Link>
     </button>
   )
 }
