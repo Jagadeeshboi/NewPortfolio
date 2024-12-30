@@ -1,17 +1,14 @@
 import { useState } from "react"
 import emailjs from "emailjs-com"
+import Toast from "./Toast";
 
 function Contact() {
-    // const userId = process.env.REACT_APP_USER_ID!;
-    // const templateId = process.env.REACT_APP_TEMPLATE_ID!;
-    // const serviceId = process.env.REACT_APP_SERVICE_ID!;
-
     const [data,setData]=useState<{name:string,email:string,message:string}>({
         name: "",
         email: "",
         message: ""
     })
-    const [status, setStatus]=useState(false);   
+    const [status, setStatus]=useState("");   
 
     const handleChange = (e:any) => {
         const {name,value} = e.target
@@ -24,12 +21,12 @@ function Contact() {
         .send("service_tk9cdfs", "template_8eilzfn", data, "lDLItLssU7IrJ1Z29")
         .then(
             (result) => {
-                setStatus(true);
-                alert(result.text);
+                setStatus("success");
+                console.log(result.text);
             },
             (error) => {
-                setStatus(false);
-                alert(error.text);
+                setStatus("fail");
+                console.log(error.text);
             }
             );
         setData({
@@ -39,6 +36,10 @@ function Contact() {
         });
     }
     return (
+    <>
+    <section className="max-w-xl w-full mx-auto">
+        {status ==="success"? <Toast message="Thank For Choosing Me" type="success" />:status==="fail"?<Toast message="Something Went Wrong! Please Trying Later" type="error" />:""}
+    </section>
     <section className="bg-[#1a1a1a] rounded-2xl mt-16 lg:mt-24">
     <div className="container px-6 py-12 mx-auto">
         <div className="lg:flex lg:items-center lg:-mx-6">
@@ -122,6 +123,7 @@ function Contact() {
         </div>
     </div>
 </section>
+    </>
 )
 }
 
