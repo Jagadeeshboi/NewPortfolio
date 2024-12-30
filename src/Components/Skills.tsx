@@ -20,16 +20,16 @@ function Skills() {
                 <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
                     <ul ref={logosRef} className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
                         <li>
-                            <img src="React.png" alt="Facebook" className="w-16 grayscale" />
+                            <img src="React.png" alt="React" className="w-16 grayscale" />
                         </li>
                         <li>
-                            <img src="Python.png" alt="Facebook" className="w-16 grayscale" />
+                            <img src="Python.png" alt="Python" className="w-16 grayscale" />
                         </li>
                         <li>
-                            <img src="sql.png" alt="Facebook" className="w-16 grayscale" />
+                            <img src="sql.png" alt="Sql" className="w-16 grayscale" />
                         </li>
                         <li>
-                            <img src="typescript.png" alt="Facebook" className="w-16 grayscale" />
+                            <img src="typescript.png" alt="typescript" className="w-16 grayscale" />
                         </li>
                     </ul>                
                 </div>                

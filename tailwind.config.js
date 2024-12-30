@@ -10,11 +10,11 @@ export default {
         inter: ['Inter', 'sans-serif'],
     },
     animation: {
-        'infinite-scroll': 'infinite-scroll 20s linear infinite',
+        'infinite-scroll': 'infinite-scroll 5s linear infinite',
     },
     keyframes: {
         'infinite-scroll': {
-            from: { transform: 'translateX(0)' },
+            from: { transform: 'translateX(10)' },
             to: { transform: 'translateX(-100%)' },
         }
       },

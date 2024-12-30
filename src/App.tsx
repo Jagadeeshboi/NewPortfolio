@@ -15,6 +15,7 @@ const App = () => {
             <Route path="contact" element={<Contact/>} />
             <Route path="/works" element={<Works/>} />
           </Route>
+          {document.title="jagadeesh Boina"}
       </Routes>
     </BrowserRouter>
   )

@@ -1,17 +1,19 @@
+import { NavLink } from "react-router-dom";
 
 interface Projects{
   project:{
     title:string,
     stack:string,
     image:string,
-    data:string
+    data:string,
+    link?:string,
   }
 }
 function ProjectCard(props:Projects) {
   const {project} = props;
-  const {title,stack,image,data} = project;
+  const {title,stack,image,data,link=""} = project;
   return (
-    <div>
+    <NavLink to={link} target="_blank">
         <article className="max-w-sm cursor-pointer overflow-hidden rounded-lg border border-gray-800  transition hover:border hover:border-gray-100">
         <img
             alt=""
@@ -31,7 +33,7 @@ function ProjectCard(props:Projects) {
             </p>
         </div>
         </article>
-    </div>
+    </NavLink>
   )
 }
 
