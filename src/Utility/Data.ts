@@ -60,3 +60,22 @@ export const Projects=[
         data:"I have created a personal portfolio website using React, Tailwind CSS, and XML. This project allowed me to practice my skills in web development, design, and UI/UX. By using a combination of React components, Tailwind CSS for styling, and XML for templating, I was able to create a visually appealing and user-friendly website that showcases my work, skills, and experiences. This project also allowed me to explore more advanced features like routing, state management, and responsive design, making it a valuable learning experience. Moving forward, I can continue to enhance my portfolio by adding more projects, improving the design, and optimizing performance to create a more professional and engaging online presence."
     }
 ]
+
+export const NavData=[
+    {
+        name:"Home",
+        path:"/"
+    },
+    {
+        name:"About",
+        path:"/about"
+    },
+    {
+        name:"Works",
+        path:"/works"
+    },
+    {
+        name:"Contact",
+        path:"/contact"
+    }
+]
