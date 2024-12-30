@@ -23,8 +23,8 @@ const Nav = () => {
         </div>
         <div className={` ${open?"translate-y-0":"-translate-y-full"}  fixed z-20 transition-all duration-100  right-6 top-12  my-4 text-base list-none bg-black border border-gray-800 divide-y divide-white w-52 rounded shadow  lg:hidden`}>
         <ul className="py-1" role="none">
-          {NavData.map((data,i)=><li>
-            <NavLink to={data.path} key={i} className="block px-4 py-2 text-sm text-white" role="menuitem" onClick={()=>SetOpen(!open)}>{data.name}</NavLink>
+          {NavData.map((data,i)=><li key={i} >
+            <NavLink to={data.path} className="block px-4 py-2 text-sm text-white" role="menuitem" onClick={()=>SetOpen(!open)}>{data.name}</NavLink>
           </li>)}
         </ul>
       </div>

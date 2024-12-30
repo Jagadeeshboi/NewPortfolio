@@ -10,7 +10,7 @@ export default {
         inter: ['Inter', 'sans-serif'],
     },
     animation: {
-        'infinite-scroll': 'infinite-scroll 10s linear infinite',
+        'infinite-scroll': 'infinite-scroll 20s linear infinite',
     },
     keyframes: {
         'infinite-scroll': {
