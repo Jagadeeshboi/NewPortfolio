@@ -100,17 +100,17 @@ function Contact() {
                     <form className="mt-6" onSubmit={handleSubmit}>
                         <div className="flex-1">
                             <label className="block mb-2 text-sm text-gray-600">Full Name</label>
-                            <input onChange={handleChange} type="text" name="name" placeholder="John Doe" className="block w-full px-5 py-3 mt-2 text-gray-400 placeholder-gray-400 bg-white border border-gray-200 rounded-mdray-60000 focus:border-orange-400orange-400 focus:ring-orange-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                            <input onChange={handleChange} type="text" name="name" placeholder="John Doe" className="block w-full px-5 py-3 mt-2 text-gray-400 placeholder-gray-400 bg-white border border-gray-200 rounded-md  focus:border-orange-400orange-400 focus:ring-orange-400 focus:outline-none focus:ring focus:ring-opacity-40" required/>
                         </div>
 
                         <div className="flex-1 mt-6">
                             <label className="block mb-2 text-sm text-gray-600">Email address</label>
-                            <input onChange={handleChange} type="email" name="email" placeholder="johndoe@example.com" className="block w-full px-5 py-3 mt-2 text-gray-400 placeholder-gray-400 bg-white border border-gray-200 rounded-mdray-60000 focus:border-orange-400orange-400 focus:ring-orange-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                            <input onChange={handleChange} type="email" name="email" placeholder="johndoe@example.com" className="block w-full px-5 py-3 mt-2 text-gray-400 placeholder-gray-400 bg-white border border-gray-200 rounded-md  focus:border-orange-400  focus:ring-orange-400 focus:outline-none focus:ring focus:ring-opacity-40" required/>
                         </div>
 
                         <div className="w-full mt-6">
                             <label className="block mb-2 text-sm text-gray-600">Message</label>
-                            <textarea onChange={handleChange} name="message" className="block w-full h-32 px-5 py-3 mt-2 text-gray-400 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48ray-60000 focus:border-orange-400orange-400 focus:ring-orange-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Message"></textarea>
+                            <textarea onChange={handleChange} name="message" className="block w-full h-32 px-5 py-3 mt-2 text-gray-400 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48ray-60000 focus:border-orange-400orange-400 focus:ring-orange-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Message" required></textarea>
                         </div>
                         <div className="mt-6">
                         <button className='bg-orange-500 border rounded-xl inline-flex items-center justify-center py-2 px-5 text-center text-base font-medium border-orange-900 text-primary hover:bg-orange-light-5 hover:text-body-color-gray-3 disabled:border-gray-3 disabled:textlue-light-3' type="submit">
