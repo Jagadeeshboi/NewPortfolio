@@ -5,22 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: { keyframes: {
-      marquee: {
-        '0%': { transform: 'translateX(0%)' },
-        '100%': { transform: 'translateX(-100%)' },
+    extend: {
+      // ...
+      keyframes: {
+        'slide-left': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        },
       },
-      marquee2: {
-        '0%': { transform: 'translateX(100%)' },
-        '100%': { transform: 'translateX(0%)' },
+      animation: {
+        'slide-left-infinite': 'slide-left 8s linear infinite',
       },
-    },
-    animation : {
-      'spin-slow-30': 'spin 30s linear infinite',
-      'spin-slow-25': 'spin 25s linear infinite',
-      'spin-slow-10': 'spin 10s linear infinite',
-      'marquee-infinite' : 'marquee 25s linear infinite',
-    },
     },
   },
   plugins: [],
